@@ -1,0 +1,197 @@
+/*
+* vid Section
+*/
+.vid {
+    position: relative;
+    height: 100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+@media (min-width: 1400px) {
+    .vid__heading {
+        font-size: 3.2rem;
+    }
+}
+
+.vid__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.vid__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.vid__content {
+    z-index: 1;
+}
+
+.vid__content-width {
+    max-width: 540px;
+}
+
+.vid__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.vid__scroll-btn:hover {
+    color: var(--bs-light);
+    opacity: 0.8;
+}
+
+.vid__scroll-btn .bi {
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+}
+
+/*image
+*/
+.imageText{
+
+      width: auto; 
+    height: 500px; 
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/bar.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100%; */
+}
+
+.imageText p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 2rem;
+    color: white;
+}
+
+.imageText:hover{
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9)inset;
+
+}
+
+.imageText p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*
+* Steps Section
+*/
+.steps {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.steps__section-thumbnail {
+    height: 240px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.steps__content-width {
+    max-width: 456px;
+    margin: 0 auto;
+}
+
+.steps--background {
+    background-color: #FEF8F9;
+}
+
+@media (min-width: 544px) {
+    .steps {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .steps__section-thumbnail {
+        height: auto;
+    }
+}
+
+
+.footer {
+    margin: auto;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poooins',sans-serif;
+
+    position: relative;
+    width: 100%;
+    background: #545cd4;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footercontent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.footer .footercontent li {
+    list-style: none;
+}
+
+.footer .footercontent li p{
+    font-size: 2rem;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.footer .footercontent li p:hover{
+    transform: translateY(-10px);
+}
+
+.footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: red url("../imgs/logo.jpg");
+    background-size: 1000px 100px;
+}
+
+
+.footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
