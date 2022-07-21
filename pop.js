@@ -18,6 +18,14 @@ function closeWindow() {
 	newWindow.close();
 }
 
+function playAudio1() {
+	document.getElementById("close").addEventListener("click", function () {
+		document.getElementById("audRik1").play();
+	}
+	);
+}
+
+
 function playAdudio() {
 	document.getElementById("drinkbtn").addEventListener("click", function () {
 		document.getElementById("audRik").play();
@@ -25,6 +33,3 @@ function playAdudio() {
 	}
 	);
 }
-
-
- 

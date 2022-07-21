@@ -244,6 +244,7 @@ a:hover {
     height: 800px;
     transition: 0.5s;
     display: flex;
+    font-size: x-small;
     justify-content: center;
     align-items: center;
     background-image: url("../imgs/bar.jpg");
@@ -254,6 +255,7 @@ a:hover {
 
 .imageText p {
     opacity: 0;
+    display: flex;
     transform: scale(0);
     transition: 0.8s;
     font-size: 2rem;
